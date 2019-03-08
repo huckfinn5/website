@@ -11,6 +11,15 @@ nav{
     background-color: #fff;
 }
 
+.cover {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+}
 
 ul{
     margin-left: 60px;
