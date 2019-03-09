@@ -11,17 +11,6 @@ nav{
     background-color: #fff;
 }
 
-#background_wrap {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/sky-blue-background-wallpaper-1.jpg');
-    background-attachment: fixed;
-}
 
 ul{
     margin-left: 60px;
@@ -206,6 +195,7 @@ body{
     margin:10;
     font-size: 9px;
     font: normal 10px Arial, Georgia;
+    min-width: 1024px;
     
 }
 
