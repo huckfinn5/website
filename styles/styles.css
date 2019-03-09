@@ -18,6 +18,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     background-attachment: scroll;
+    min-width: 1024px;
   }
 
 ul{
