@@ -246,6 +246,14 @@ h1 {
     filter: alpha(opacity=50);
 }
 
+html, body {
+    background: url("https://backgroundcheckall.com/wp-content/uploads/2017/12/sky-blue-background-wallpaper-1.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
 
 .portfolio-photo{
     width: 200px;
