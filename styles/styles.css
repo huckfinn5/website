@@ -12,7 +12,7 @@ nav{
 }
 
 html { 
-    background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/sky-blue-background-wallpaper-1.jpg) no-repeat center center fixed; 
+    background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/sky-blue-background-wallpaper-1.jpg) no-repeat center center scroll; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
