@@ -211,10 +211,17 @@ body{
     
 }
 
+li{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
 h1 {
+    font-size: 20px;
     font-weight: normal;
     font-family: 'Times New Roman', Times, serif
 }
+
 .main-photo{
     width: 275px;
 }
