@@ -11,6 +11,13 @@ nav{
     background-color: #fff;
 }
 
+.new{
+    background-color: white ;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    margin-bottom: 200px;
+}
 
 ul{
     margin-left: 60px;
