@@ -19,9 +19,16 @@ nav{
     background-color: white ;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 50px;
+    border-radius: 5px;
     margin-bottom: 200px;
 }
+
+.picout{
+    background-color: black ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 ul{
     margin-left: 60px;
