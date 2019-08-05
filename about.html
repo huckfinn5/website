@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en" class="animated fadeIn">
+<html>
     <style>
     html {
       scroll-behavior: smooth;
@@ -9,91 +9,200 @@
         <title>Kenneth Debacker</title>
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/animate.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script async src='./JavaScript/index.js'></script>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script async src='./JavaScript/index.js'></script>
+        <link rel="stylesheet" href="./styles/animsition.css">
+        <link rel="stylesheet" href="./styles/slick.css">
+        <link rel="stylesheet" href="./styles/slick-theme.css">
+        <meta charset="UTF-8">
     </head>
-    <body style="background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/sky-blue-background-wallpaper-1.jpg); background-size: 100% 100% ">
-        <nav>
+    <body style="background: white; min-width: 1400px; ">
+      <div
+  class="animsition"
+  data-animsition-in-class="fade-in"
+  data-animsition-in-duration="1000"
+  data-animsition-out-class="fade-out"
+  data-animsition-out-duration="800"
+>  
+      <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Personal Projects</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="about.html">About Me</a></li>
+              <li><a href="index.html" class="animsition-link">Home</a></li>
+              <li><a href="portfolio.html" class="animsition-link">Personal Projects</a></li>
+              <li><a href="publications.html" class="animsition-link">Publications</a></li>
+              <li><a href="about.html" class="animsition-link">About Me</a></li>
           </ul>
         </nav>
-        <div style = "width:1000px; margin: 0 auto;">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1><font size="+5">About Me</font></h1
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1><img class="menu10-photo" src="img/arrow.png" alt="main-photo"></img></h1>
-        <br>
-        <h1 style="text-align:center"><a href="#highschool" ><img class="menu5-photo" src="img/highschool.png" alt="main-photo"><span>Click to Edit</span></img></a><a href="#college"><img class="menu5-photo" src="img/college.png" alt="main-photo"></a><a href="#aftercollege"><img class="menu5-photo" src="img/library.png" alt="main-photo"></a></h1>
-        <a name="highschool"></a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class = "new5">
-        <h1 style="text-align:left"><font size="+2">HighSchool:</font></h1>
-        <br>
-        <h1 style="text-align:left">Outside of school work I enjoyed rowing, competing on the national level in both the US and Canada, and fishing, a hobby of mine since elementary school. </h1>
+        <div id = "gray" style = "display: none; width:100%; height:80px; margin-top:25px; background-color: black; opacity: .2; position: absolute; z-index: -1">
+          </div>
+          
+          <div id = "green" class = "green" style = " display: none; overflow: auto; width:50px; height:765px; background-color: rgb(204, 146, 231); opacity: 1; position: relative; z-index: 1; float: right; margin-right: 25px;">
+            </div>
+
+   
+      <div style = "margin-left:0px; margin-top:0px; width:100%; height:765px; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
+        </div> 
+
+        <div id = "control" style="display: none; position:absolute; margin-top:120px; margin-left:20px;">
+            <div id = "show_bar" style="display: none; background-color:rgb(230, 116, 116); opacity: .3; border-radius: 5px; width: 90px; height:40px; position: absolute; z-index: 10000; margin-left: 25px; margin-top: 75px;"></div>
+            <img style="height:300px;" src="./img/arrow2.png">
+            <h1 style="z-index:100; position: absolute; margin-left: 32px; margin-top:-220px; font-size: 25px;">Present</h1>
+            <h1 style="z-index:100; position: absolute; margin-left: 32px; margin-top:-155px; font-size: 25px;">College</h1>
+            <h1 style="z-index:100; position: absolute; margin-left: 32px; margin-top:-90px; font-size: 25px;">HighSchool</h1>
         </div>
-        <br>
-        <br>
-        <img class="main1-photo" src="img/fishing.JPG" alt="main1-photo">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <img class="main1-photo" src="img/rowing.jpg" alt="main1-photo" onmouseover="src ='img/rowing2.png'" onmouseout="src='img/rowing.jpg'">
-        <a name="college"></a>
-        <br>
-        <br>
-        <br>
-        <div class = "new5">
-        <h1 style="text-align:left"><font size="+2">College:</font></h1>
-        <br>
-        <h1 style="text-align:left">As a high schooler I discovered that I liked chemistry, although I didn’t know much about it at the time (as exemplified by <a target="_blank" href="https://www.youtube.com/watch?v=62tWJnUpIys" class="new_link">this </a> final project video). When I took organic chemistry in college, I found a topic that fascinated me. I was fortunate to have the opportunity to work  in the synthetic organic chemistry lab of Professor Scott Snyder. I never looked back, working in lab alongside Dr. Hyung Min Chi and graduate student Pengfei Hu for ~40 hours a week during the school year, and much more in the summer. </h1>
+
+        <div style=" margin-left:20px; margin-top:0px;">
+        <div id="upa" style="opacity: 0; z-index:50;position:absolute;margin-left:62px; margin-top:460px;">
+            <i class="up" style="border: solid black;border-width: 0 5px 5px 0;display: inline-block; padding: 20px;" ></i>
+          </div>
+          <div id = "downa" style="opacity: 0; z-index:50;position:absolute;margin-left:62px; margin-top:550px;">
+              <i class="down" style="border: solid black;border-width: 0 5px 5px 0;display: inline-block; padding: 20px;" ></i>
+          </div>
+
+          <div  id = "downc" onmouseover="shader_d()" onmouseout="normal_d()" style= " opacity:0; z-index:10000; margin-left:35px;; margin-top:580px; background-color:black; width:100px; height:100px; border-radius: 50%; background-color: black; position:absolute"   data-role="none" class="slick-prev"></div>
+          <div id = "upc" onmouseover="shader_u()" onmouseout="normal_u()" style= " opacity:0; z-index:1000;margin-left:35px; margin-top:470px; background-color:black;  width:100px; height:100px; border-radius: 50%; background-color: black; position:absolute"   data-role="none" class="slick-next"></div>
         </div>
+
+        <h1 style="margin-top:40px; text-align: center; color:transparent"><font size="+5">About Me</font></h1>
+        <h1 style="position:absolute; margin-top:-55px; margin-left: 575px;background: -webkit-linear-gradient(rgb(5, 5, 5), #164581); -webkit-background-clip: text;  -webkit-text-fill-color: transparent; "><font size="+5">About Me</font></h1>
+
         <br>
         <br>
-        <img class="main1-photo" src="img/lab.png" alt="chem-photo" onmouseover="src ='img/lab.png'" onmouseout="src='img/lab.png'">
-        <br>
-        <br>
-        <div class = "new5">
-        <h1 style="text-align:left">Aside from chemistry and classes, I was a dedicated ultimate frisbee player. The team was a close-knit group, and I enjoyed competing alongside my friends.</h1>
+
+        <div id="highschool" style="margin-left:200px;display:none; ">
+            <div style = "margin-left:0px; margin-top:12px; width:1100px; height:490px; position: absolute; background-color: rgb(139, 194, 219); opacity: .2;"></div>
+            <div style="margin-left:30px; margin-top:30px; position: absolute; width:1000px;">
+            <h1 style="text-align:left"><font size="+2">HighSchool:</font></h1>
+            <br>
+            <h1 style="text-align:left">Outside of school work I enjoyed rowing, competing on the national level in both the US and Canada, and fishing, a hobby of mine since elementary school. </h1>
+           </div>
+           <div style="position:absolute; margin-top:150px;">
+              <img style="z-index: 100; background-color: rgba(0,0,0,.2);  padding: 5px; border-radius: 0px; width:400px; margin-left:75px;" class="main1-photo" src="img/fishing.JPG" alt="main1-photo">
+              <img style="background-color: rgba(0,0,0,.2);  padding: 5px; border-radius: 0px; width:400px; margin-left:75px;" class="main1-photo" src='img/rowing2.png'>
+           </div>
+          </div>
+
+          <div id="college" style="margin-left:200px; display:none; ">
+          <div style = "margin-left:0px; margin-top:12px; width:1100px; height:570px; position: absolute; background-color: rgb(219, 184, 139); opacity: .2;"></div>
+          <div style="margin-left:30px; margin-top:30px; position: absolute; width:1000px;">
+          <h1 style="text-align:left"><font size="+2">College:</font></h1>
+          <br>
+          <h1 style="text-align:left">As a high schooler I discovered that I liked chemistry, although I didn’t know much about it at the time (as exemplified by <a target="_blank" href="https://www.youtube.com/watch?v=62tWJnUpIys" class="new_link">this </a> final project video). When I took organic chemistry in college, I found a topic that fascinated me. I was fortunate to have the opportunity to work  in the synthetic organic chemistry lab of Professor Scott Snyder. I never looked back, working in lab alongside Dr. Hyung Min Chi and graduate student Pengfei Hu for ~40 hours a week during the school year, and much more in the summer. Aside from chemistry and classes, I was a dedicated ultimate frisbee player. The team was a close-knit group, and I enjoyed competing alongside my friends. </h1>
+          <br>
         </div>
-        <br>
-        <br>
-        <img class="main1-photo" src="img/frisbee.jpg" alt="main1-photo" onmouseover="src ='img/frisbee2.png'" onmouseout="src='img/frisbee.jpg'">
-        <a name="aftercollege"></a>
-        <br>
-        <br>
-        <br>
-        <div class = "new5">
-        <h1 style="text-align:left"><font size="+2">Present:</font></h1>
-        <br>
-        <h1 style="text-align:left">I applied to graduate school to pursue a PhD in organic chemistry, and I was accepted into some great top ten programs. But, for various reasons, mostly the hazards of lab work, I chose not to attend.</h1>
-        <br>
-        <br>
-        <h1 style="text-align:left">I had never written a line of code before July of 2018, yet CS was appealing to me because of the opportunities it would make available -- going back to school in pursuit of an M.S. or PhD in computational chemistry/biology remains very much on my mind. Over time, I actually found that I quite enjoyed CS as a logic-based discipline, whose problem solving nature resonated with what had originally attracted me to organic chemistry.</h1>
-        <br>
-        <br>
-        <h1 style="text-align:left">From July of 2018 to February of 2019, I lived at my local library and did nothing but study and code, except on the weekends when I worked at a coffee shop for a change of scenery. I learned to code in Python, C++, and Javascript, to use Bash, Kivy Language, HTML, PHP, SQL, and CSS, and about the theoretical side of CS - algorithms, data structures, object-oriented programming, big-O runtimes, how data is stored/accessed, etc. I tested my understanding by creating projects, working through questions in textbooks, and completing online challenges. In March of 2019 I started working for Neaton Mathematics, where I develop education software.</h1>
+         <div style="position:absolute; margin-top:240px;">
+            <img style="z-index: 100; background-color: rgba(0,0,0,.2);  padding: 5px; border-radius: 0px; width:400px; margin-left:75px;" class="main1-photo" src="img/lab.png" alt="main1-photo">
+            <img style="background-color: rgba(0,0,0,.2);  padding: 5px; border-radius: 0px; width:400px; margin-left:75px; margin-bottom: 25px;" class="main1-photo" src='img/frisbee.jpg'>
+         </div>
         </div>
-        </div>
-        <br>
-        <br>
-        <br>
+
+        <div id="present" style="display: none; margin-left:200px;">
+            <div style = "margin-left:0px; margin-top:12px; width:1100px; height:610px; position: absolute; background-color: rgb(152, 218, 166); opacity: .2;"></div>
+            <div style="margin-left:30px; margin-top:30px; position: absolute; width:1000px;">
+                <h1 style="text-align:left"><font size="+2">Present:</font></h1>
+                <br>
+                <h1 style="text-align:left">I applied to graduate school to pursue a PhD in organic chemistry, and I was accepted into some great top ten programs. But, for various reasons, mostly the organic chemistry lifestyle, I chose not to attend. I had never written a line of code before July of 2018, yet CS was appealing to me because of the opportunities it would make available. Over time, I actually found that I very much enjoyed CS, particulary the chance it gave me to build, create, and problem solve. These aspects kept my eyes glued to the screen, and my mind happily fixated on the task/project at hand.</h1>
+                <br>
+                <br>
+                <h1 style="text-align:left">From July of 2018 to February of 2019, I lived at my local library and did nothing but study and code, except on the weekends when I worked at a coffee shop for a change of scenery. I learned to code in Python, C++, and Javascript, to use Bash, Kivy Language, HTML, PHP, SQL, and CSS, and about the theoretical side of CS - algorithms, data structures, object-oriented programming, big-O runtimes, how data is stored/accessed, etc. I tested my understanding by creating projects, working through questions in textbooks, and completing online challenges. In March of 2019 I got my first gig as a programmer, and started working for Neaton Mathematics, where I develop education software. I still enjoy playing frisbee from time to time.</h1>
+                </div>
+           <div style="position:absolute; margin-top:355px;">
+              <img style="z-index: 100;   padding: 15px; border-radius: 0px; width:400px; margin-left:125px; margin-bottom: 80px;" class="main1-photo" src="img/logo.png" alt="main1-photo">
+              <img style="background-color: rgba(0,0,0,.2);  padding: 5px; border-radius: 0px; width:320px; margin-left:75px; margin-bottom: 5px;" class="main1-photo" src='img/frisbee3.JPG'>
+           </div>
+          </div>
+      </div> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+      <script src="./JavaScript/animsition.js"></script>
+<script>
+  var current = 2;
+  var possible = ["#highschool","#college","#present"];
+
+$(document).ready(function() {
+  $('.animsition').animsition();
+});
+
+$(document).ready(function() {
+  $('#green').delay(500).slideDown(1000);
+  $("#gray").delay(500).animate({width:'toggle'},1000);
+  $("#control").delay(1500).slideDown(750)
+  $('#present').delay(2250).toggle(750);
+  $('#show_bar').delay(2250).animate({width:'toggle'},750);
+  $('#upa').delay(3500).animate({opacity: '1'},500);
+    $("#downa").delay(3500).animate({opacity: '1'},500);
+    $('#upc').delay(3500).animate({opacity: '.2'},500);
+    $('#downc').delay(3500).animate({opacity: '.2'},500);
+
+});
+
+$(document).ready(function() {
+  $.fn.Move_Up = function(){
+    if(current < 2){
+      $(possible[current]).toggle(750)
+      current +=1
+    $(possible[current]).delay(750).toggle(750)
+    if(possible[current] == "#present"){
+      $('#show_bar').delay(1500).animate({marginTop:'-=65px', width: '-=2px'},500)
+    }
+    else if(possible[current] == "#college"){
+      $('#show_bar').delay(1500).animate({marginTop:'-=65px', width: '-=42px'},500)
+    }
+  }
+}
+  $('#upc').click(function(){
+    $.fn.Move_Up();
+  })
+
+});
+
+
+$(document).ready(function() {
+  $.fn.Move_Down = function(){
+    if(current > 0){
+      $(possible[current]).toggle(750)
+      current -=1
+    $(possible[current]).delay(750).toggle(750)
+    if(possible[current] == "#college"){
+      $('#show_bar').delay(1500).animate({marginTop:'+=65px', width: '+=2px'},500)
+    }
+    else if(possible[current] == "#highschool"){
+      $('#show_bar').delay(1500).animate({marginTop:'+=65px', width: '+=42px'},500)
+
+    }
+  }
+  }
+  $('#downc').click(function(){
+    $.fn.Move_Down();
+  })
+  
+});
+</script>  
+
+<script>
+
+function shader_u(){
+        document.getElementById("upc").style.opacity = .1
+        document.getElementById("upa").style.opacity = .5
+      }
+
+      function normal_u(){
+        document.getElementById("upc").style.opacity = .2
+        document.getElementById("upa").style.opacity = 1
+      }
+
+      function shader_d(){
+        document.getElementById("downc").style.opacity = .1
+        document.getElementById("downa").style.opacity = .5
+      }
+
+      function normal_d(){
+        document.getElementById("downc").style.opacity = .2
+        document.getElementById("downa").style.opacity = 1
+      }
+      
+</script>
     </body>
 </html>   

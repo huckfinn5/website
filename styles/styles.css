@@ -70,7 +70,7 @@ ul li a{
 }
 
 ul li a:hover{
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 .fa-file{
@@ -80,7 +80,7 @@ ul li a:hover{
     vertical-align: 100px;
 }
 .fa-file:hover {
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 .fa-linkedin-square{
@@ -91,7 +91,7 @@ ul li a:hover{
     vertical-align: 100px;
 }
 .fa-linkedin-square:hover {
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 .fa-github-square{
@@ -101,7 +101,7 @@ ul li a:hover{
     vertical-align: 100px;
 }
 .fa-github-square:hover {
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 .fa-apple{
@@ -112,7 +112,7 @@ ul li a:hover{
     vertical-align: 100px;
 }
 .fa-apple:hover {
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 .fa-android{
@@ -123,7 +123,7 @@ ul li a:hover{
     vertical-align: 100px;
 }
 .fa-android:hover {
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 .fa-envelope{
@@ -144,11 +144,11 @@ ul li a:hover{
 }
 
 .fa-hackerrank:hover{
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 .fa-envelope:hover {
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 span{
@@ -202,7 +202,7 @@ i:hover span{
 
 .fa-phone:hover{
     text-decoration: none;
-    color: blue;
+    color: rgb(125, 177, 245);
     white-space: nowrap;
     margin-top: 110px; 
 }
@@ -219,7 +219,7 @@ i:hover span{
 }
 
 .fa-award:hover{
-    color: blue;
+    color: rgb(125, 177, 245);
 }
 
 
@@ -233,6 +233,10 @@ body{
     min-width: 1200px;
     
 }
+
+html, body {
+    height: 100%; /* necessary */
+    }
 
 .wrapper{
     margin: 0 auto 0 60px;
@@ -258,7 +262,7 @@ h1 {
 }
 
 .main-photo{
-    width: 275px;
+    width: 260px;
 }
 
 .tryout-photo{
@@ -288,14 +292,27 @@ h1 {
     filter: alpha(opacity=50);
 }
 
-html, body {
-    background: url("https://backgroundcheckall.com/wp-content/uploads/2017/12/sky-blue-background-wallpaper-1.jpg") no-repeat center center fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
-    
+
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
 
 .portfolio-photo{
     width: 200px;
@@ -310,7 +327,7 @@ html, body {
 }
 
 .new_link{
-    color:blue;
+    color:rgb(125, 177, 245);
     text-decoration: none;
 }
 
