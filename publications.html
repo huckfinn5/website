@@ -14,6 +14,7 @@
   data-animsition-in-duration="1000"
   data-animsition-out-class="fade-out"
   data-animsition-out-duration="800"
+  style="height:100%"
 > 
       <nav>
           <ul>
@@ -23,21 +24,21 @@
               <li><a href="about.html" class="animsition-link">About Me</a></li>
           </ul>
         </nav>
-        <div id = "gray" style = "display: none; width:100%; height:80px; margin-top:25px; background-color: black; opacity: .2; position: absolute; z-index: -1">
+        <div id = "gray" style = "display: none; width:100%; height:7vw; margin-top:2.5vw; background-color: black; opacity: .2; position: absolute; z-index: -1">
           </div>
           
-          <div id = "green" class = "green" style = "display: none; overflow: auto; width:50px; height:869px; background-color: rgb(224, 145, 143); opacity: 1; position: relative; z-index: 1; float: right; margin-right: 25px;">
+          <div id = "green" class = "green" style = "display: none; overflow: auto; width:3vw; height:859px; background-color: rgb(224, 145, 143); opacity: 1; position: absolute; z-index: 1; float: right; margin-left: 95vw">
             </div>
    
-      <div style = "margin-left:0px; margin-top:0px; width:100%; height:869px; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
+      <div style = " width:100%; height:859px; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
         </div> 
-        <div style = "width:1000px; margin: 0 auto;">
-        <h1 style="margin-top:40px;background: -webkit-linear-gradient(rgb(5, 5, 5), #164581); -webkit-background-clip: text;  -webkit-text-fill-color: transparent; "><font size="+5">Publications</font></h1>
+        <div style = "width:80vw; margin-left:10vw;">
+        <h1 style="margin-top:4vw;background: -webkit-linear-gradient(rgb(5, 5, 5), #164581); -webkit-background-clip: text;  -webkit-text-fill-color: transparent; font-size: 5vw ">Publications</h1>
 
-                <ol style="margin-top:70px;">
+                <ol style="margin-top:10vh;">
                     <li><div style=" opacity: 0" id = "topper">
-                        <h1 style="text-align:left" >P. Hu, H. Chi, K. DeBacker, X. Gong, J. Keim, I. Hsu, S. A. Snyder. Quaternary-centre-guided synthesis of complex polycyclic terpenes</i> </h1>
-                        <h1 style="text-align:left"><a target="_blank" href="https://www.nature.com/articles/s41586-019-1179-2" style="color:blue;">Nature 2019, 569, 703.</a></h1>
+                        <h1 style="text-align:left; font-size: 1.5vw" >P. Hu, H. Chi, K. DeBacker, X. Gong, J. Keim, I. Hsu, S. A. Snyder. Quaternary-centre-guided synthesis of complex polycyclic terpenes</i> </h1>
+                        <h1 style="text-align:left; font-size: 1.5vw"><a target="_blank" href="https://www.nature.com/articles/s41586-019-1179-2" style="color:blue;">Nature 2019, 569, 703.</a></h1>
                       </div>
                         <br>
                         <h1 style="text-align:center"><a target="_blank" href="https://www.nature.com/articles/s41586-019-1179-2"><img onmouseover="nature_on()" onmouseout="nature_off()" style="width:0px;" id = "nature" class = "chem-photo" src="img/paper_picture2.png" alt="paper_picture2"></a></h1>
@@ -48,14 +49,18 @@
 
                 <li>
                     <div style="opacity: 0" id = "bottomer">
-                <h1 style="text-align:left" >C. J. F. Cole, H. M. Chi, K. C. DeBacker, S. A. Snyder. <i>Synthesis of Enhanced, Isolable Disulfanium Salts and their Application to Thiiranium-Promoted Polyene Cyclizations</i> </h1>
-                <h1 style="text-align:left"><a target="_blank" href="https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0037-1609754" style="color:blue;">Synthesis 2018, 50, A-H.</a></h1>
+                <h1 style="text-align:left; font-size: 1.5vw" >C. J. F. Cole, H. M. Chi, K. C. DeBacker, S. A. Snyder. <i>Synthesis of Enhanced, Isolable Disulfanium Salts and their Application to Thiiranium-Promoted Polyene Cyclizations</i> </h1>
+                <h1 style="text-align:left; font-size: 1.5vw"><a target="_blank" href="https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0037-1609754" style="color:blue;">Synthesis 2018, 50, A-H.</a></h1>
                 </div>
                 <br>
                 <h1 style="text-align:center"><a target="_blank" href="https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0037-1609754"><img onmouseover="syn_on()" onmouseout="syn_off()" style="width:0px;" id = "synthesis" class = "chem-photo" src="img/chem_photo.png" alt="chem_photo"></a></h1>
                 </li>
                 </div>
                 </ol>
+                <br>
+                <br>
+                <br>
+                
                 </div>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
               <script src="./JavaScript/animsition.js"></script>
@@ -67,11 +72,10 @@
         $(document).ready(function(){
     $('#green').delay(500).slideDown(1000);
     $("#gray").delay(500).animate({width:'toggle'},1000);
-    $("#topper").delay(1500).animate({opacity: '1',width: '1000px'},900);
-    $('#nature').delay(1500).animate({opacity: '1',width: '550px'},900);
+    $("#topper").delay(1500).animate({opacity: '1'},900);
+    $('#nature').delay(1500).animate({opacity: '1',width: $(window).width()*0.4},900);
     $("#bottomer").delay(1500).animate({opacity: '1'},900);
-    $('#synthesis').delay(1500).animate({opacity: '1',width: '550px'},900);
-
+    $('#synthesis').delay(1500).animate({opacity: '1',width: $(window).width()*0.4},900);
 });
         </script>
 
