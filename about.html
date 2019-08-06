@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html">
     <style>
     html {
       scroll-behavior: smooth;
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="./styles/slick-theme.css">
         <meta charset="UTF-8">
     </head>
-    <body style="background: white; min-width: 1400px; ">
+    <body style="background: white; width:900; height:400 ">
       <div
   class="animsition"
   data-animsition-in-class="fade-in"
@@ -39,11 +39,11 @@
         <div id = "gray" style = "display: none; width:100%; height:80px; margin-top:25px; background-color: black; opacity: .2; position: absolute; z-index: -1">
           </div>
           
-          <div id = "green" class = "green" style = " display: none; overflow: auto; width:50px; height:765px; background-color: rgb(204, 146, 231); opacity: 1; position: relative; z-index: 1; float: right; margin-right: 25px;">
+          <div id = "green" class = "green" style = " display: none; overflow: auto; width:50px; height:100vh; background-color: rgb(204, 146, 231); opacity: 1; position: relative; z-index: 1; float: right; margin-right: 25px;">
             </div>
 
    
-      <div style = "margin-left:0px; margin-top:0px; width:100%; height:765px; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
+      <div style = "margin-left:0px; margin-top:0px; width:100vw;; height:100vh; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
         </div> 
 
         <div id = "control" style="display: none; position:absolute; margin-top:120px; margin-left:20px;">
@@ -135,7 +135,7 @@ $(document).ready(function() {
     $("#downa").delay(3500).animate({opacity: '1'},500);
     $('#upc').delay(3500).animate({opacity: '.2'},500);
     $('#downc').delay(3500).animate({opacity: '.2'},500);
-
+    alert($(document).height())
 });
 
 $(document).ready(function() {

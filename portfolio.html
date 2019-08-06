@@ -25,7 +25,7 @@
             color:red !important;
         }
         </style>
-    <body style="background: white; min-width: 1400px; ">
+    <body style="background: white; text-align: center;">
       <div
   class="animsition"
   data-animsition-in-class="fade-in"
@@ -41,81 +41,75 @@
               <li><a href="about.html" class="animsition-link">About Me</a></li>
           </ul>
         </nav>
-        <div id = "gray" style = "display: none; width:100%; height:80px; margin-top:25px; background-color: black; opacity: .2; position: absolute; z-index: -1">
+        <div id = "gray" style = "display: none; width:100%; height:6vw; margin-top:2.3vw; background-color: black; opacity: .2; position: absolute; z-index: -1">
           </div>
           
-          <div id = "green" class = "green" style = "display: none; overflow: auto; width:50px; height:750px; background-color: rgb(219, 212, 144); opacity: 1; position: relative; z-index: 1; float: right; margin-right: 25px;">
+          <div id = "green" class = "green" style = "display: none; overflow: auto; width:3vw; height:100vh; background-color: rgb(219, 212, 144); opacity: 1; position: absolute; z-index: 1; float: right; margin-left: 95vw;">
             </div>
-   
-      <div style = "margin-left:0px; margin-top:0px; width:100%; height:750px; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
+
+          <div  onmouseover = "shader_r()" onmouseout = "normal_r()" id = "rightc" onclick="move_right()" style= "opacity:0; z-index:10000; margin-left:85vw; margin-top:22vw; background-color:black; width:8vw; height:8vw; border-radius: 50%; background-color: rgba(0,0,0,.2); position:absolute; "  ><i class="right" style="border: solid black;border-width: 0 .35vw .35vw 0;display: inline-block; padding: 1.4vw; opacity:1; margin-top:2.1vw; margin-left: -1vw;" ></i> </div>
+
+          <div id = "trackers" style="margin-top:41vw; margin-left:44vw; position: absolute; opacity: 0">
+              <p style="display: inline-block; font-size:2vw;" id = "one" >&#9679</p><p id = "two" style="display: inline-block; font-size:2vw; margin-left: 1.7vw; opacity: .2;">&#9679</p><p id = "three" style="display: inline-block; opacity: .2; font-size:2vw; margin-left: 1.7vw;">&#9679</p><p id = "four" style="display: inline-block; opacity: .2; font-size:2vw; margin-left: 1.7vw;">&#9679</p>
+            </div>
+
+      <div style = "margin-left:0px; margin-top:0px; width:100%; height:100vh; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
         </div> 
-        <div style = "width:1110px; margin-left: 75px;">
-        <h1 style="margin-top:40px; margin-left: 100px; background: -webkit-linear-gradient(rgb(5, 5, 5), #164581); -webkit-background-clip: text;  -webkit-text-fill-color: transparent; "><font size="+25">Personal Projects</font></h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div style="width:1060px; margin-left: 60px; opacity: 0;" id = "demo1" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-              <div> 
-                <div style="z-index:-100;border-radius: 5px; margin-left:0px; position:absolute; width:1060px; height:400px; background-color: rgb(144, 168, 196); opacity: .2;"></div>
-                <img style="margin-top:20px; margin-left:30px;" class="main-photo" src="img/chemcat.png"> 
-                <a style="margin-left:-805px;" target="_blank" href="https://bit.ly/2G7jLTV"> <i title = "Google Play" class="fa fa-android" style="font-size:75px"></i></a><a target="_blank" href="https://apple.co/2GjhkwL"><i title = "App Store" class="fa fa-apple" style="font-size:75px"></i></a>  
-                  <div style = "margin-left: 310px;position: absolute; margin-top:-380px; width:700px; z-index:100">
-                  <h1 style="text-align:left"><font size="+2">Chem-Cat:</font></h1>
+        <div style = "width:90vw; margin-left:10vw;">
+            <h1 style="margin-top:2.9vw; margin-left: -10vw; background: -webkit-linear-gradient(rgb(5, 5, 5), #164581); -webkit-background-clip: text;  -webkit-text-fill-color: transparent; font-size: 4vw">Personal Projects</h1>
+        
+            <div style="width:73vw; margin-left:1vw; opacity: 0; margin-top: 4vw;" id = "demo1" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+              <div > 
+                <div style="z-index:-100;border-radius: 5px; margin-left:0vw; position:absolute; width:73vw; height:28vw; background-color: rgb(144, 168, 196); opacity: .2;"></div>
+                <img style="margin-top:1vw; margin-left:2vw; width: 17vw;" class="main-photo" src="img/chemcat.png"> 
+                <a style="margin-left:-52vw;" target="_blank" href="https://bit.ly/2G7jLTV"> <i title = "Google Play" class="fa fa-android" style="font-size:5.5vw"></i></a><a target="_blank" href="https://apple.co/2GjhkwL"><i title = "App Store" class="fa fa-apple" style="font-size:5.5vw; margin-left:3.5vw;"></i></a>  
+                  <div style = "margin-left: 20vw;position: absolute;margin-top:-29vw; width:50vw; z-index:100">
+                  <h1 style="text-align:left; font-size:2vw; ">Chem-Cat:</h1>
                   <br>
-                  <h1 style="text-align:left">Chem-Cat is a mobile app for learning organic chemistry, available on both Google Play and The App Store. It utilizes Kivy, an open source Python library for developing mobile applications. The app features over 75 pages of illustrated explanations detailing key concepts of organic chemistry, over 900 questions, and 10 sets of step-by-step flashcards for commonly asked reaction mechanisms.</h1>
+                  <h1 style="text-align:left; font-size:1.37vw;">Chem-Cat is a mobile app for learning organic chemistry, available on both Google Play and The App Store. It utilizes Kivy, an open source Python library for developing mobile applications. The app features over 75 pages of illustrated explanations detailing key concepts of organic chemistry, over 900 questions, and 10 sets of step-by-step flashcards for commonly asked reaction mechanisms.</h1>
                   <br>
-                  <h1 style="text-align:left">This project honed my ability to problem solve. Figuring out the Kivy UI, how it interacted with my Python code, and running test after test to get things to appear/work the way I wanted them to was a great learning experience. In addition, getting my app (written in Python and Kivy Language) to compile into an APK/iOS package using VM environments - as well as  programs like HomeBrew, Buildozer, and more advanced functions of the command line - was another point of growth for me. </h1>
+                  <h1 style="text-align:left; font-size:1.37vw;">This project honed my ability to problem solve. Figuring out the Kivy UI, how it interacted with my Python code, and running test after test to get things to appear/work the way I wanted them to was a great learning experience. In addition, getting my app (written in Python and Kivy Language) to compile into an APK/iOS package using VM environments - as well as  programs like HomeBrew, Buildozer, and more advanced functions of the command line - was another point of growth for me. </h1>
                   </div> 
               </div>
+
               <div> 
-                  <div style="z-index:-100;border-radius: 5px; margin-left:0px; position:absolute; width:1060px; height:400px; background-color: rgb(151, 202, 151); opacity: .2;"></div>
-                  <img style="margin-top:30px; margin-left:30px;" class="main-photo" src="img/algorthms.png"> 
-                  <a style="margin-left:-507px; margin-top:10px; position: absolute;" target="_blank" href="https://www.hackerrank.com/kcdebacker"> <i title = "HackerRank" class="fab fa-hackerrank" style="font-size:75px"></i></a>  
-                    <div style = "margin-left: 320px;position: absolute; margin-top:-230px; width:700px; z-index:100">
-                    <h1 style="text-align:left"><font size="+2">HackerRank/Project Euler:</font></h1>
+                  <div style="z-index:-100;border-radius: 5px; margin-left:0vw; position:absolute; width:73vw; height:28vw; background-color: rgb(151, 202, 151); opacity: .2;"></div>
+                  <img style="margin-top:2vw; margin-left:2vw; width: 17vw;" class="main-photo" src="img/algorthms.png"> 
+                  <a style="margin-left:-29vw;; margin-top:2vw; position: absolute;" target="_blank" href="https://www.hackerrank.com/kcdebacker"> <i title = "HackerRank" class="fab fa-hackerrank" style="font-size:5.5vw"></i></a>  
+                    <div style = "margin-left: 20vw;position: absolute; margin-top:-15vw; width:50vw; z-index:100">
+                    <h1 style="text-align:left; font-size:2vw;">HackerRank/Project Euler:</h1>
                     <br>
-                    <h1 style="text-align:left">HackerRank and Project Euler are both problem solving websites. The general theme of both is that there is an obvious brute force solution, but finding an optimized runtime solution is necessary to complete each challenge.  These sites are one of the ways that I test my understanding of concepts.</h1>
+                    <h1 style="text-align:left; font-size:1.37vw;">HackerRank and Project Euler are both problem solving websites. The general theme of both is that there is an obvious brute force solution, but finding an optimized runtime solution is necessary to complete each challenge.  These sites are one of the ways that I test my understanding of concepts.</h1>
                     <br>
-                    <h1 style="text-align:left">I enjoy these sites because they let me test my ability to create efficient, streamlined solutions. While a lot of my current projects/work tend to be more UI/web development. related, I spent a large amount of time understanding/ mastering topics like data structures, algorithms, OOP, etc., and how to use them to produce efficient Big-O runtimes for data manipulation. These sites provided me with an environment to practice and hone these skills, complete with diverse problems and test cases. I am currently in the top 3% for number of problems solved on Project Euler, and have numerous gold medal achievments on HackerRank.</h1>
+                    <h1 style="text-align:left; font-size:1.37vw;">I enjoy these sites because they let me test my ability to create efficient, streamlined solutions. While a lot of my current projects/work tend to be more UI/web development. related, I spent a large amount of time understanding/ mastering topics like data structures, algorithms, OOP, etc., and how to use them to produce efficient Big-O runtimes for data manipulation. These sites provided me with an environment to practice and hone these skills, complete with diverse problems and test cases. I am currently in the top 3% for number of problems solved on Project Euler, and have numerous gold medal achievments on HackerRank.</h1>
                   </div> 
                 </div>
 
+
                 <div> 
-                    <div style="z-index:-100;border-radius: 5px; margin-left:0px; position:absolute; width:1060px; height:400px; background-color: rgb(199, 179, 141); opacity: .2;"></div>
-                    <img style="margin-top:20px; margin-left:30px; height:250px;" class="main-photo" src="img/tryout.png"> 
-                    <a style="margin-left:-405px; margin-top:20px; position: absolute;" target="_blank" href="https://github.com/huckfinn5/Tryout"> <i title = "Tryout on GitHub" class="fa fa-github-square" style="font-size:75px"></i></a>  
-                      <div style = "margin-left: 310px;position: absolute; margin-top:-220px; width:700px; z-index:100">
-                      <h1 style="text-align:left"><font size="+2">Tryout:</font></h1>
+                    <div style="z-index:-100;border-radius: 5px; margin-left:0px; position:absolute; width:73vw; height:28vw; background-color: rgb(199, 179, 141); opacity: .2;"></div>
+                    <img style="margin-top:1.5vw; margin-left:1.5vw; width: 17vw;" class="main-photo" src="img/tryout.png"> 
+                    <a style="margin-left:-29vw; margin-top:2vw; position: absolute;" target="_blank" href="https://github.com/huckfinn5/Tryout"> <i title = "Tryout on GitHub" class="fa fa-github-square" style="font-size:5.5vw;"></i></a>  
+                      <div style = "margin-left: 20vw;position: absolute; margin-top:-15vw; width:50vw; z-index:100">
+                      <h1 style="text-align:left; font-size:2vw">Tryout:</h1>
                       <br>
-                      <h1 style="text-align:left">Tryout is a mobile app whose code is available on my Github. I made it using Kivy, just as I did with Chem-Cat. The app’s inspiration came from my experience coaching high school ultimate frisbee, I wanted to make an app to track playing time and ensure equal opportunities to see the field. Tryout also has options for football, soccer, rugby, field hockey, and basketball. The app runs fine on a desktop using Kivy, but is yet to be released on The App Store/Google Play.</h1>
+                      <h1 style="text-align:left; font-size:1.37vw;">Tryout is a mobile app whose code is available on my Github. I made it using Kivy, just as I did with Chem-Cat. The app’s inspiration came from my experience coaching high school ultimate frisbee, I wanted to make an app to track playing time and ensure equal opportunities to see the field. Tryout also has options for football, soccer, rugby, field hockey, and basketball. The app runs fine on a desktop using Kivy, but is yet to be released on The App Store/Google Play.</h1>
                       </div> 
                   </div>
 
                   <div> 
-                      <div style="z-index:-100;border-radius: 5px; margin-left:0px; position:absolute; width:1060px; height:400px; background-color: rgb(181, 164, 226); opacity: .2;"></div>
-                      <img style="margin-top:30px; margin-left:30px; width:350px;" class="main-photo" src="img/html.png"> 
-                      <div style = "margin-left: 400px;position: absolute; margin-top:-220px; width:600px; z-index:100">
-                          <h1 style="text-align:left"><font size="+2">Personal Website:</font></h1>
+                      <div style="z-index:-100;border-radius: 5px; margin-left:0px; position:absolute; width:73vw; height:28vw; background-color: rgb(181, 164, 226); opacity: .2;"></div>
+                      <img style="margin-top:1.5vw; margin-left:1.5vw; width:22vw;" class="main-photo" src="img/html.png"> 
+                      <div style = "margin-left: 25vw;position: absolute; margin-top:-13vw; width:45vw; z-index:100">
+                          <h1 style="text-align:left; font-size:2vw">Personal Website:</h1>
                           <br>
-                          <h1 style="text-align:left">Many job applications asked for a personal website, and I didn't have one. So, I built my own using HTML/CSS/JavaScript.</h1>
+                          <h1 style="text-align:left;font-size:1.37vw;">Many job applications asked for a personal website, and I didn't have one. So, I built my own using HTML/CSS/JavaScript.</h1>
                           </div> 
                       </div>
             </div>
-            <div id = "trackers" style="margin-top:-50px; margin-left:50px; opacity: 0">
-              <p style="display: inline-block; font-size:25px;" id = "one" >&#9679</p><p id = "two" style="display: inline-block; font-size:25px; margin-left: 20px; opacity: .2;">&#9679</p><p id = "three" style="display: inline-block; opacity: .2; font-size:25px; margin-left: 20px;">&#9679</p><p id = "four" style="display: inline-block; opacity: .2; font-size:25px; margin-left: 20px;">&#9679</p>
-            </div>
-            <div id="righta" style="opacity:0; z-index:50;position:absolute;margin-left:1140px; margin-top:-270px;">
-              <i class="right" style="border: solid black;border-width: 0 5px 5px 0;display: inline-block; padding: 20px;" ></i>
-            </div>
-            <div id = "lefta" style="opacity:0;z-index:50;position:absolute;margin-left:-10px; margin-top:-270px;">
-                <i class="left" style="border: solid black;border-width: 0 5px 5px 0;display: inline-block; padding: 20px;" ></i>
-            </div>
-                </div>
-              </div> 
+
+          </div>
+      </div> 
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
               <script src="./JavaScript/animsition.min.js"></script>
               <script src="./JavaScript/slick.min.js"></script>
@@ -129,10 +123,10 @@
     arrows:true,
     dots: true,
     accessibility: true,
-  nextArrow: '<div onmouseover = "shader_r()" onmouseout = "normal_r()" id = "rightc" onclick="move_right()" style= "opacity:0; z-index:10000; margin-left:1065px; margin-top:-240px; background-color:black; width:100px; height:100px; border-radius: 50%; background-color: black; position:absolute"   data-role="none" class="slick-prev"></div>',
-  prevArrow: '<div onmouseover = "shader_l()" onmouseout = "normal_l()" id = "leftc" onclick="move_left()" style= "opacity:0; z-index:1000;margin-left:-105px; margin-top:197px; background-color:black;  width:100px; height:100px; border-radius: 50%; background-color: black; position:absolute"   data-role="none" class="slick-next"></div>',
+    appendArrows: $('#demo1'),
+    nextArrow: $('#rightc'),
+  prevArrow: '<div  onmouseover = "shader_l()" onmouseout = "normal_l()" id = "leftc" onclick="move_left()" style= "opacity:0; z-index:1000;margin-left:-9vw; margin-top:11vw; background-color:black;  width:8vw; height:8vw; border-radius: 50%; background-color: rgba(0,0,0,.2); position:absolute"  ><i class="left" style="border: solid black;border-width: 0 .35vw .35vw 0;display: inline-block; padding: 1.4vw; opacity:1; margin-top:2.1vw; margin-right: -1vw;" ></i></div>',
   autoplay: false,
-  autoplaySpeed: 3000,
   swipe: false
   });
 });
@@ -147,8 +141,8 @@
 $(document).ready(function(){
     $('#lefta').delay(2500).animate({opacity: '1'},500);
     $("#righta").delay(2500).animate({opacity: '1'},500);
-    $('#leftc').delay(2500).animate({opacity: '.2'},500);
-    $('#rightc').delay(2500).animate({opacity: '.2'},500);
+    $('#leftc').delay(2500).animate({opacity: '1'},500);
+    $('#rightc').delay(2500).animate({opacity: '1'},500);
 });
     </script>  
     
@@ -178,23 +172,19 @@ $(document).ready(function(){
       }
 
       function shader_r(){
-        document.getElementById("rightc").style.opacity = .1
-        document.getElementById("righta").style.opacity = .5
+        document.getElementById("rightc").style.opacity = .5
       }
 
       function normal_r(){
-        document.getElementById("rightc").style.opacity = .2
-        document.getElementById("righta").style.opacity = 1
+        document.getElementById("rightc").style.opacity = 1
       }
 
       function shader_l(){
-        document.getElementById("leftc").style.opacity = .1
-        document.getElementById("lefta").style.opacity = .5
+        document.getElementById("leftc").style.opacity = .5
       }
 
       function normal_l(){
-        document.getElementById("leftc").style.opacity = .2
-        document.getElementById("lefta").style.opacity = 1
+        document.getElementById("leftc").style.opacity = 1
       }
 
     </script>

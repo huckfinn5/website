@@ -7,7 +7,7 @@
         <script async src='./JavaScript/index.js'></script>
         <link rel="stylesheet" href="./styles/animsition.css">
     </head>
-    <body style="background: white; overflow-y: scroll; min-width: 1400px;">
+    <body style="background: white; overflow-y: scroll; min-width: 1400px; text-align: center; ">
       <div
   class="animsition"
   data-animsition-in-class="fade-in"
@@ -24,18 +24,18 @@
               <li><a href="about.html" class="animsition-link">About Me</a></li>
           </ul>
         </nav>
-        <div id = "gray" style = "display: none; width:100%; height:7vw; margin-top:2.5vw; background-color: black; opacity: .2; position: absolute; z-index: -1">
+        <div id = "gray" style = "display: none; width:100%; height:6vw; margin-top:2.3vw; background-color: black; opacity: .2; position: absolute; z-index: -1">
           </div>
           
-          <div id = "green" class = "green" style = "display: none; overflow: auto; width:3vw; height:859px; background-color: rgb(224, 145, 143); opacity: 1; position: absolute; z-index: 1; float: right; margin-left: 95vw">
+          <div id = "green" class = "green" style = "display: none; overflow: auto; width:3vw; height:100vh; background-color: rgb(224, 145, 143); opacity: 1; position: absolute; z-index: 1; float: right; margin-left: 95vw">
             </div>
    
-      <div style = " width:100%; height:859px; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
+      <div id="back" style = " width:100%; height:100vh; margin-top: 0 auto; background-color: black; opacity: .1; position: absolute; z-index: -1">
         </div> 
         <div style = "width:80vw; margin-left:10vw;">
-        <h1 style="margin-top:4vw;background: -webkit-linear-gradient(rgb(5, 5, 5), #164581); -webkit-background-clip: text;  -webkit-text-fill-color: transparent; font-size: 5vw ">Publications</h1>
+        <h1 style="margin-top:2.9vw;background: -webkit-linear-gradient(rgb(5, 5, 5), #164581); -webkit-background-clip: text;  -webkit-text-fill-color: transparent; font-size: 4vw ">Publications</h1>
 
-                <ol style="margin-top:10vh;">
+                <ol style="margin-top:7vw;">
                     <li><div style=" opacity: 0" id = "topper">
                         <h1 style="text-align:left; font-size: 1.5vw" >P. Hu, H. Chi, K. DeBacker, X. Gong, J. Keim, I. Hsu, S. A. Snyder. Quaternary-centre-guided synthesis of complex polycyclic terpenes</i> </h1>
                         <h1 style="text-align:left; font-size: 1.5vw"><a target="_blank" href="https://www.nature.com/articles/s41586-019-1179-2" style="color:blue;">Nature 2019, 569, 703.</a></h1>
@@ -57,10 +57,6 @@
                 </li>
                 </div>
                 </ol>
-                <br>
-                <br>
-                <br>
-                
                 </div>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
               <script src="./JavaScript/animsition.js"></script>
@@ -77,9 +73,43 @@
     $("#bottomer").delay(1500).animate({opacity: '1'},900);
     $('#synthesis').delay(1500).animate({opacity: '1',width: $(window).width()*0.4},900);
 });
+
+
         </script>
 
         <script>
+
+          var height1 = $(document).height()
+          function change(){
+            height1 = $(document).height()
+            var heightnew = height1.toString() + "px"
+            document.getElementById("back").style.height = heightnew
+            document.getElementById("green").style.height = heightnew
+          }
+
+          setTimeout(change, 2400)
+
+          window.onresize = function() {
+            var widther = $(window).width()*0.4
+            var newwidth = widther.toString() + "px"
+            document.getElementById('nature').style.width = newwidth
+            document.getElementById('synthesis').style.width = newwidth
+            if($(window).height()+250 < $(window).width()){
+              var height22 = $('#nature').height() * 4.5
+            var heightnewnew = height22.toString() + "px"
+              document.getElementById("back").style.height = heightnewnew
+            document.getElementById("green").style.height = heightnewnew
+            }
+           else{
+              var height22 = $('#nature').height() * 8.5
+            var heightnewnew = height22.toString() + "px"
+              document.getElementById("back").style.height = heightnewnew
+            document.getElementById("green").style.height = heightnewnew
+            }
+          }
+
+
+
         function nature_on(){
           document.getElementById("nature").style.opacity = .5
         }

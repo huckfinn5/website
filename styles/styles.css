@@ -74,10 +74,8 @@ ul li a:hover{
 }
 
 .fa-file{
-    padding-left: 100px;
-    padding-right: 50px;
     color: black;
-    vertical-align: 100px;
+    vertical-align: 7vw;
 }
 .fa-file:hover {
     color: rgb(125, 177, 245);
@@ -86,9 +84,7 @@ ul li a:hover{
 .fa-linkedin-square{
     text-decoration: none;
     color: black;
-    padding-right: 25px;
-    padding-left: 25px;
-    vertical-align: 100px;
+    vertical-align: 7vw;
 }
 .fa-linkedin-square:hover {
     color: rgb(125, 177, 245);
@@ -97,8 +93,8 @@ ul li a:hover{
 .fa-github-square{
     text-decoration: none;
     color: black;
-    padding-right: 25px;
-    vertical-align: 100px;
+    vertical-align: 7vw;
+    
 }
 .fa-github-square:hover {
     color: rgb(125, 177, 245);
@@ -107,9 +103,7 @@ ul li a:hover{
 .fa-apple{
     text-decoration: none;
     color: black;
-    padding-right: 25px;
-    padding-left: 25px;
-    vertical-align: 100px;
+    vertical-align: 10vw;
 }
 .fa-apple:hover {
     color: rgb(125, 177, 245);
@@ -118,9 +112,7 @@ ul li a:hover{
 .fa-android{
     text-decoration: none;
     color: black;
-    padding-right: 25px;
-    padding-left: 100px;
-    vertical-align: 100px;
+    vertical-align: 10vw;
 }
 .fa-android:hover {
     color: rgb(125, 177, 245);
@@ -129,18 +121,13 @@ ul li a:hover{
 .fa-envelope{
     text-decoration: none;
     color: black;
-    padding-right: 25px;
-    padding-left: 25px;
-    vertical-align: 100px;
+    vertical-align: 7vw;
 }
 
 
 .fa-hackerrank{
     text-decoration: none;
     color: black;
-    padding-right: 25px;
-    padding-left: 100px;
-    vertical-align: 100px;
 }
 
 .fa-hackerrank:hover{
@@ -184,14 +171,7 @@ span:after{
     transform:rotate(45deg);
     margin-top: 0px; 
 }
-.fa-phone{
-    text-decoration: none;
-    color: black;
-    position: static;
-    padding-left: 25px;
-    margin-top: 110px;
-    vertical-align: top;
-}
+
 
 
 i:hover span{
@@ -200,12 +180,6 @@ i:hover span{
     position: relative;
 }
 
-.fa-phone:hover{
-    text-decoration: none;
-    color: rgb(125, 177, 245);
-    white-space: nowrap;
-    margin-top: 110px; 
-}
 
 .fa-award{
     text-decoration: none;
@@ -224,7 +198,6 @@ i:hover span{
 
 
 body{
-    text-align: center;
     margin-top: 0cm;
     padding: 10;
     margin:10;
@@ -262,7 +235,6 @@ h1 {
 }
 
 .main-photo{
-    width: 260px;
 }
 
 .tryout-photo{
@@ -282,7 +254,6 @@ h1 {
 }
 
 .chem-photo{
-    width: 450px;
     opacity: 1.0;
     filter: alpha(opacity=100);
 }
