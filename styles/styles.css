@@ -5,6 +5,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+*{
+ outline: 1px solid red;
+}
+
 nav{
     width: 100vw;
     height: 5.5vw;
