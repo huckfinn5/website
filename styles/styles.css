@@ -207,7 +207,7 @@ body{
     margin:10;
     font-size: 9px;
     font: normal 10px Arial, Georgia;
-    
+    width: 100vw;
 }
 
 html, body {
