@@ -203,10 +203,6 @@ i:hover span{
 
 
 body{
-    margin-top: 0cm;
-    padding: 10;
-    margin:10;
-    font-size: 9px;
     font: normal 10px Arial, Georgia;
     width: 100vw;
 }
@@ -228,12 +224,10 @@ html, body {
 }
 
 li{
-    font-size: 20px;
     font-family: 'Times New Roman', Times, serif
 }
 
 h1 {
-    font-size: 20px;
     font-weight: normal;
     font-family: 'Times New Roman', Times, serif
 }
