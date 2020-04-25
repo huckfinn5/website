@@ -72,11 +72,11 @@
             padding-bottom: 2vw;
           }
           </style>
-        <div class="outer_group" style="width:100vw; background-color: rgba(230, 11, 41, 0.25);"><a class="groups" href="index.html" class="groups" style="padding-right:65vw;">Home</a></div>
-        <div class="outer_group" style="width:100vw; background-color:rgba(32, 115, 238, 0.25);"><a href="portfolio.html" class="groups" style="padding-right:15vw;" >Personal Projects</a></div>
-        <div class="outer_group" style="width:100vw; background-color:rgba(20, 235, 20, 0.25); "> <a href="publications.html" class="groups" style="padding-right:65vw;" >Publications</a></div> 
-        <div class="outer_group" style="width:100vw; background-color:  rgba(248, 214, 24, 0.25);"><a href="about.html" class="groups" style="padding-right:45vw;">About Me</a></div>
-      
+        <div class="outer_group" style="width:100vw; background-color: rgba(127, 214, 127, 0.55);"><a class="groups" href="index.html" class="groups" style="padding-right:65vw;">Home</a></div>
+        <div class="outer_group" style="width:100vw; background-color:rgba(219, 212, 144, 0.55);"><a href="portfolio.html" class="groups" style="padding-right:15vw;" >Personal Projects</a></div>
+        <div class="outer_group" style="width:100vw; background-color:rgba(224, 145, 143, 0.55); "> <a href="publications.html" class="groups" style="padding-right:65vw;" >Publications</a></div> 
+        <div class="outer_group" style="width:100vw; background-color:  rgba(207, 164, 226, 0.55);"><a href="about.html" class="groups" style="padding-right:45vw;">About Me</a></div>
+
       </div>
 
         <div id = "blue" style = "width:100vw; display:none; height:10vw; background-color: rgb(139, 139, 223); opacity: 1; position: absolute; z-index: 1; margin-top:5vw;">
@@ -92,10 +92,10 @@
           <div id = "chemist" style="display: none; margin-top: 86.5vw; position: absolute; margin-left:12vw; font-size: 7.5vw; width: 80vw;"><i >Kenneth DeBacker</i></div>
 
           <div style="position:absolute; text-align:center; margin-top:100.5vw; margin-left: 1vw; ">
-            <a target="_blank" href="img/CV.pdf"> <i title = "Resume" class="fas fa-file" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>
-            <a target="_blank" href="https://github.com/huckfinn5"><i title = "GitHub" class="fa fa-github-square" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/kenneth-debacker-a7929817b"><i title = "Linkedin" class="fa fa-linkedin-square" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>  
-            <a target="_blank" href="mailto:kcdebacker@gmail.com"><i title = "Email" class="fas fa-envelope" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>
+            <a target="_blank" href="img/CV.pdf"> <i onmouseover="resume1()" id="resume" title = "Resume" class="fas fa-file" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>
+            <a target="_blank" href="https://github.com/huckfinn5"><i onmouseover="github1()" id="github" title = "GitHub" class="fa fa-github-square" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/kenneth-debacker-a7929817b"><i onmouseover="linkedin1()" id="linkedin" title = "Linkedin" class="fa fa-linkedin-square" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>  
+            <a target="_blank" href="mailto:kcdebacker@gmail.com"><i onmouseover="email1()" id="email" title = "Email" class="fas fa-envelope" style="font-size:15.5vw; margin-left:5.5vw;"></i></a>
           </div>   
           <div style="margin-left:0vw; margin-top:93vw;">
               <img id = "mol1" style=" text-align: left; display: none; position: absolute; z-index: 10; width: 12.7vw; margin-top:30vw; margin-left: 5vw; opacity: .35;" src="img/mol3.png">
@@ -170,4 +170,20 @@ function mobileCheck() {
 
 
 load()
+
+function resume1(){
+  document.getElementById("resume").style.color = "black"
+}
+
+function github1(){
+  document.getElementById("github").style.color = "black"
+}
+
+function linkedin1(){
+  document.getElementById("linkedin").style.color = "black"
+}
+
+function email1(){
+  document.getElementById("email").style.color = "black"
+}
   </script>
