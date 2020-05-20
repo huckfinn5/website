@@ -346,28 +346,28 @@ window.onresize = function() {
     </script>  
     
     <script>
-      var masterlist = ["one","two","three","four"];
+      var masterlist5 = ["one","two","three","four"];
       var counter = 0;
       function move_right(){
-        document.getElementById(masterlist[counter]).style.opacity = .2
+        document.getElementById(masterlist5[counter]).style.opacity = .2
         if(counter ==3){
           counter = 0
         }
         else{
           counter +=1
         }
-        document.getElementById(masterlist[counter]).style.opacity = 1
+        document.getElementById(masterlist5[counter]).style.opacity = 1
       }
 
       function move_left(){
-        document.getElementById(masterlist[counter]).style.opacity = .2
+        document.getElementById(masterlist5[counter]).style.opacity = .2
         if(counter ==0){
           counter = 3
         }
         else{
           counter -=1
         }
-        document.getElementById(masterlist[counter]).style.opacity = 1
+        document.getElementById(masterlist5[counter]).style.opacity = 1
       }
 
       function shader_r(){
