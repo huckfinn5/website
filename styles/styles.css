@@ -23,7 +23,36 @@ nav{
     border-radius: 5px;
     margin-bottom: 100px;
 }
+.fa-youtube-play{
+    text-decoration: none;
+    color: black;
+    vertical-align: 9.75vw;
+}
+.fa-github-square:hover {
+    color: rgb(125, 177, 245);
+}
+.fa-youtube-play:hover{
+    color: rgb(125, 177, 245);
+}
 
+.fa-apple{
+    text-decoration: none;
+    color: black;
+    vertical-align: 10vw;
+}
+.fa-apple:hover {
+    color: rgb(125, 177, 245);
+}
+
+.fa-chrome{
+    text-decoration: none;
+    color: black;
+    vertical-align: 10vw;
+}
+
+.fa-chrome:hover{
+    color: rgb(125, 177, 245);
+}
 .new5{
     background-color: white ;
     padding: 20px;
